@@ -12,6 +12,8 @@ import { AlertComponent } from './directives/alert/alert.component';
 import { JwtInterceptor } from './helpers/jwt-interceptor'
 import { ErrorInterceptor } from './helpers/error-interceptor'
 import { AuthGuardService } from './guards/auth-guard.service';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { AuthGuardService } from './guards/auth-guard.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
+
   ],
   providers: [
     AuthGuardService,
